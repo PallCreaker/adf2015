@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fujita kazumasa</title>
+    <script src="bower_components/Chart.js"></script>
+
+</head>
+<body>
+<p>fujita kazumasa<p>
+<canvas id="myChart" width="400" height="400"></canvas>
+    <script>
+  var ctx = document.getElementById("myChart").getContext("2d");
+  ctx.canvas.width = 320;
+  ctx.canvas.height = 200;
+  var data = {
+      labels: ["日", "月", "火", "水", "木", "金", "土"],
+      datasets: [
+          {
+              label: "My diet",
+              fillColor: "rgba(43,154,243,0.2)",
+              strokeColor: "rgba(43,154,243,1)",
+              pointColor: "rgba(43,154,243,1)",
+              pointStrokeColor: "#fff",
+              pointHighlightFill: "#fff",
+              pointHighlightStroke: "rgba(22,220,220,1)",
+              data: [65, 60, 64, 66, 63, 61, 60]
+          },
+      ]
+  };
+  var myLineChart = new Chart(ctx).Line(data);
+    </script>
+</body>
+</html>

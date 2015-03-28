@@ -1,0 +1,19 @@
+{
+  "name": "adf2015",
+  "version": "0.0.0",
+  "authors": [
+    "kazumasa Fujita <pallcreaker@gmail.com>"
+  ],
+  "description": "chat",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Chart.js": "~1.0.2"
+  }
+}
